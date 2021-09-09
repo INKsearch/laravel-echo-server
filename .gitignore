@@ -4,3 +4,6 @@ examples/
 npm-debug.log
 yarn-error.log
 .idea/
+.env
+.laravel-echo-server.json
+.laravel-echo-server.json.lock
