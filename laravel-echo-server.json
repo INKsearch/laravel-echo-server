@@ -1,10 +1,24 @@
 {
-	"authHost": "http://localhost",
-	"authEndpoint": "/broadcasting/auth",
-	"clients": [],
+
+	"authHost": "http://notify.dev.inksearch.co",
+	"authEndpoint": "/api/broadcasting/auth",
+	"clients": [
+		{
+			"appId": "27c6a6d6efdfd787",
+			"key": "bd31b5f1208ac39c5468bd3a2714f184"
+		},
+		{
+			"appId": "4ca85f9bffb4908b",
+			"key": "1f484608ef32d6ef8ca33149d9d11697"
+		}
+	],
 	"database": "sqlite",
 	"databaseConfig": {
-		"redis": {},
+		"redis": {
+			"host": "127.0.0.1",
+			"port": "6380",
+			"password": "uHQd3MsTLzGIol2zSPpXFB3mFspjYLMEfqTMIoOWHXLV3N9gNRwdEzVpA3bDCM7CXN/BhuhhVJW7Oep4bb"
+		},
 		"sqlite": {
 			"databasePath": "/database/laravel-echo-server.sqlite"
 		}
@@ -13,7 +27,12 @@
 	"host": null,
 	"port": "6021",
 	"protocol": "http",
-	"socketio": {},
+	"socketio": {
+		"cors": {
+			"origin": "*",
+			"methods": ["GET", "POST"]
+		}
+	},
 	"secureOptions": 67108864,
 	"sslCertPath": "",
 	"sslKeyPath": "",
@@ -25,8 +44,8 @@
 	},
 	"apiOriginAllow": {
 		"allowCors": false,
-		"allowOrigin": "",
-		"allowMethods": "",
-		"allowHeaders": ""
+		"allowOrigin": "*",
+		"allowMethods": "*",
+		"allowHeaders": "*"
 	}
 }

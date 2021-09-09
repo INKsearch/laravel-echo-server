@@ -6,3 +6,4 @@ yarn-error.log
 .env
 .laravel-echo-server.json
 .laravel-echo-server.json.lock
+/database/
