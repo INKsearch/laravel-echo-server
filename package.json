@@ -2,6 +2,7 @@
   "name": "laravel-echo-server",
   "version": "1.6.2",
   "description": "Laravel Echo Node JS Server for Socket.io",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/tlaverdure/Laravel-Echo-Server.git"
@@ -12,7 +13,6 @@
     "socket.io"
   ],
   "author": "Thiery Laverdure",
-  "license": "MIT",
   "jshintConfig": {
     "esversion": 6
   },
@@ -32,6 +32,7 @@
     "request": "^2.88.2",
     "socket.io": "^4.0.2",
     "sqlite3": "^5.0.2",
+    "tsc": "^2.0.4",
     "yargs": "^15.4.1"
   },
   "devDependencies": {
